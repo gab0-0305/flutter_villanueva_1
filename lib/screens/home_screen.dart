@@ -44,9 +44,7 @@ class _HomeScreenState extends State<HomeScreen> {
         },
         children: const [
           NewsfeedScreen(),
-          Center(child: Text('Friends')),
           Center(child: Text('Notifications')),
-          Center(child: Text('Menu')),
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
@@ -65,16 +63,8 @@ class _HomeScreenState extends State<HomeScreen> {
             label: 'Home',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.people),
-            label: 'Friends',
-          ),
-          BottomNavigationBarItem(
             icon: Icon(Icons.notifications),
             label: 'Notifications',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.menu),
-            label: 'Menu',
           ),
         ],
       ),

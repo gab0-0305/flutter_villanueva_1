@@ -67,10 +67,13 @@ class NewsfeedCard extends StatelessWidget {
             ),
             SizedBox(height: 5.h),
             if (imageAsset != null)
-              Image.asset(
-                imageAsset!,
+              SizedBox(
                 width: double.infinity,
-                fit: BoxFit.cover,
+                height: 280.h,
+                child: Image.asset(
+                  imageAsset!,
+                  fit: BoxFit.cover,
+                ),
               ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
